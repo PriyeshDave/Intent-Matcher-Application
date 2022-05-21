@@ -29,13 +29,20 @@ The dataset is based on actual data from Quora and will give anyone the opportun
 * The vectorized form of question1 and question2 is stored in **Q1_word2vec.csv** and **Q2_word2vec.csv** files respectively.
 
 ### ⚙ Model Training:
-* The model is trained using **Sequential Model** with a 3 **BidirectionalLSTM layers** with 512, 256 and 128 neurons respectively.
+The model is trained using **Sequential Model** with a 3 **BidirectionalLSTM layers** with 512, 256 and 128 units respectively.
+* First, we add the Keras LSTM layer, and following this, we add dropout layers for prevention against overfitting.
+* For the first LSTM layer, I have added 512 units that represent the dimensionality of outer space. The return_sequences parameter is set to true for returning the last output in output. 
+* Similarly, I have added other two **Bidirectional LSTM** layers.
+* For adding dropout layers, I specified the percentage of layers that should be dropped(30% in this case). 
+* The next step is to add the dense layer. 
+* At last, my model is compiled with the help of **adam optimizer**. 
+* The error is computed using **binary_crossentropy** and metric used is **accuracy**.
+* Finally, the model is fit using 100 epochs with a batch size of 2014.
 
 <img width="630" alt="image" src="https://user-images.githubusercontent.com/81012989/169664655-b9f64d52-5d4c-4b88-aee5-42e59b6423af.png">
 <img width="895" alt="image" src="https://user-images.githubusercontent.com/81012989/169664725-333863fe-d3d4-4946-bc0e-dd32b455f717.png">
 
-
 * My trained model gives an accuracy of **80%** on train data while of **76%** on test data.
-* As per the problem statement I used **F1 Score** as the evaluation metric for my model.
+* As per the problem statement I used **accuracy** as the evaluation metric for my model.
 * Model: https://drive.google.com/file/d/1MvBdkfjrAC_A1I59qO_Vr0-QpZvOIqiN/view?usp=sharing
 
