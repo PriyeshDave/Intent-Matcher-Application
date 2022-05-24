@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/81012989/169656678-d27b878a-3133-473f-9919-f242bd8bb8e1.png)
 
 ## Introduction
-Developed a hybrid model to predict intent of two questions based on generating a context-rich text feature vector by combining single words and word sequences to form a multi-dimentional word embedding structure using **Word2Vec** model.
+Developed a hybrid model to predict intent of two questions based on generating a context-rich text feature vector by combining single words and word sequences to form a multi-dimensional word embedding structure using **Word2Vec** model.
 
 ## 🧭 Problem Statement: 
 This is a binary classification problem where we are predicting if the given two questions have same intent or not:
