@@ -16,7 +16,7 @@ This is a binary classification problem where we are predicting if the given two
 * Different: If the intent is not same.
 <img width="572" alt="image" src="https://user-images.githubusercontent.com/81012989/169664213-423764e0-c52f-402e-919f-7abde7d7b541.png">
 
-## 🧾 Description: 
+## 🧾 Description:
 The dataset is based on actual data from Quora and will give anyone the opportunity to train and test models of semantic equivalence. There are over 400,000 lines of potential question duplicate pairs. Each line contains IDs for each question in the pair, the full text for each question, and a binary value that indicates whether the line truly contains a duplicate pair.
 * Datasets: https://drive.google.com/file/d/1VFNjjD88XCxQK0KX8pSSw8zudjuy8TKe/view?usp=sharing
 
